@@ -31,7 +31,8 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: calc(var(--header-h) + 1rem);
-  overflow-y: scroll; /* Previne pulo/mudança de tamanho do header entre páginas curtas e longas */
+  overflow-y: scroll;
+  /* Previne pulo/mudança de tamanho do header entre páginas curtas e longas */
 }
 
 body {
@@ -441,12 +442,10 @@ ul {
   width: auto;
   max-width: 180px;
   object-fit: contain;
-  filter: grayscale(100%) opacity(0.65);
   transition: all 0.3s ease;
 }
 
 .client-logo:hover {
-  filter: grayscale(0%) opacity(1);
   transform: scale(1.05);
 }
 
