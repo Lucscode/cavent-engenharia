@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contato Cavent Engenharia — formulário, telefone, e-mail e endereço.">
+  <link rel="icon" href="assets/favicon.png" type="image/png" sizes="any">
+  <link rel="apple-touch-icon" href="assets/favicon.png">
+  <title>Contato | Cavent Engenharia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Playfair+Display:wght@500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">
+        <img class="brand__mark" src="assets/contact-side.png" width="40" height="40" alt="" decoding="async">
+        <span class="brand__text">
+          <span class="brand__name">CAVENT</span>
+          <span class="brand__tag">ENGENHARIA</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav"
+        aria-label="Abrir menu"><span></span></button>
+      <nav class="nav" id="site-nav" data-nav>
+        <ul class="nav__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="solucoes.html">Soluções</a></li>
+          <li><a href="contato.html" class="is-active">Contato</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+        <a class="btn btn--dark" href="contato.html">Fale conosco <span class="btn__icon"
+            aria-hidden="true">→</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section-surface" aria-labelledby="contato-titulo" data-reveal>
+      <div class="container contact-grid">
+        <div>
+          <p class="section-label">Entre em contato</p>
+          <h1 id="contato-titulo" class="heading-serif heading-lg">Entre em contato com nossa equipe de especialistas
+          </h1>
+          <form data-contact-form novalidate>
+            <div class="form-grid" style="margin-top:1.5rem">
+              <div class="form-field">
+                <label for="nome">Nome completo</label>
+                <input id="nome" name="nome" type="text" autocomplete="name" placeholder="Nome completo" required>
+              </div>
+              <div class="form-field">
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="email" autocomplete="email" placeholder="E-mail" required>
+              </div>
+              <div class="form-field form-field--full">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Como podemos te ajudar?" required></textarea>
+              </div>
+            </div>
+            <button class="btn btn--dark" type="submit" style="margin-top:1rem">
+              Enviar
+              <span class="btn__icon" aria-hidden="true">→</span>
+            </button>
+            <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+          </form>
+          <div style="margin-top:2rem;color:var(--color-text-muted);font-size:0.95rem">
+            <p><strong>E-mail:</strong> <a href="mailto:caventengenharia@gmail.com">caventengenharia@gmail.com</a></p>
+            <p><strong>Telefone / WhatsApp:</strong> <a href="tel:+5519995941508">+55 (19) 99594-1508</a></p>
+            <p><strong>Endereço:</strong> R. Oadir Beraldo, 521 — Paulínia, SP, 13148-246</p>
+          </div>
+        </div>
+        <div class="contact-photo">
+          <img src="assets/contact-side.png" width="1080" height="1080" alt="Equipe de atendimento Cavent">
+        </div>
+      </div>
+    </section>
+
+    <section aria-label="Mapa">
+      <iframe class="map-wrap" title="Mapa — R. Oadir Beraldo, Paulínia" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=R.+Oadir+Beraldo,+521,+Paul%C3%ADnia+-+SP,+13148-246&output=embed">
+      </iframe>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="brand" style="margin-bottom:0.75rem">
+          <img class="brand__mark" src="assets/contact-side.png" width="36" height="36" alt="" decoding="async">
+          <span class="brand__text"><span class="brand__name">CAVENT ENGENHARIA</span></span>
+        </div>
+        <p style="color:var(--color-text-muted);font-size:0.9rem;margin:0">Projetos de infraestrutura urbana.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Menu</h4>
+        <ul class="footer-links">
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="index.html#projetos">Projetos</a></li>
+          <li><a href="sobre.html">Sobre nós</a></li>
+          <li><a href="index.html#historia">Nossa história</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Siga-nos</h4>
+        <ul class="footer-links">
+          <li><a href="https://www.linkedin.com" rel="noopener noreferrer" target="_blank">LinkedIn</a></li>
+          <li><a href="https://www.instagram.com" rel="noopener noreferrer" target="_blank">Instagram</a></li>
+          <li><a href="https://www.facebook.com" rel="noopener noreferrer" target="_blank">Facebook</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <p><a href="mailto:caventengenharia@gmail.com">caventengenharia@gmail.com</a></p>
+        <p><a href="tel:+5519995941508">+55 (19) 99594-1508</a></p>
+        <p>Campinas, SP</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">© 2026 · Cavent Engenharia. Todos os direitos reservados. Brasil.</div>
+  </footer>
+  <script src="js/main.js" defer></script>
+</body>
+
+</html>
