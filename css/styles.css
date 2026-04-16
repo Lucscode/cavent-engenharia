@@ -150,6 +150,16 @@ ul {
   object-fit: contain;
 }
 
+.site-header .brand__mark {
+  width: 52px;
+  height: 52px;
+}
+
+.site-footer .brand__mark {
+  width: 44px;
+  height: 44px;
+}
+
 .brand__text {
   display: none;
 }
