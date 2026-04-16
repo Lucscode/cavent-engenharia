@@ -18,7 +18,7 @@
   --font-sans: "DM Sans", system-ui, sans-serif;
   --font-serif: "Playfair Display", Georgia, serif;
   --container: min(1180px, 92vw);
-  --header-h: 76px;
+  --header-h: 90px;
 }
 
 /* ——— Base & Resets ——— */
@@ -153,6 +153,7 @@ ul {
 .site-header .brand__mark {
   width: 70px;
   height: 70px;
+  padding: 10px 0;
 }
 
 .site-footer .brand__mark {
