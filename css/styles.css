@@ -352,7 +352,7 @@ ul {
 .hero__card {
   background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-navy-soft) 100%);
   border-radius: var(--radius-lg);
-  padding: clamp(1.75rem, 4vw, 3.25rem);
+  padding: 32px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
