@@ -23,6 +23,19 @@
     };
   }
 
+  /* Theme toggle */
+  function initThemeToggle() {
+    var btn = qs("[data-theme-toggle]");
+    if (!btn) return;
+    btn.addEventListener("click", function () {
+      var current = document.documentElement.getAttribute("data-theme");
+      var next = current === "dark" ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", next);
+      localStorage.setItem("theme", next);
+    });
+  }
+  initThemeToggle();
+
   /* Menu mobile */
   var toggle = qs("[data-nav-toggle]");
   var nav = qs("[data-nav]");
@@ -326,10 +339,10 @@
         var category = card.getAttribute("data-category") || "";
         var title = qs("h3", card) ? qs("h3", card).textContent.toLowerCase() : "";
         var desc = qs("p:last-of-type", card) ? qs("p:last-of-type", card).textContent.toLowerCase() : "";
-        
+
         var matchesFilter = currentFilter === "all" || category === currentFilter;
         var matchesSearch = currentSearch === "" || title.indexOf(currentSearch) > -1 || desc.indexOf(currentSearch) > -1;
-        
+
         if (matchesFilter && matchesSearch) {
           card.style.display = "block";
           visibleCount++;

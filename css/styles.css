@@ -21,6 +21,20 @@
   --header-h: 110px;
 }
 
+:root[data-theme="dark"] {
+  --color-navy: #f6f7f9;
+  --color-navy-soft: #e8eaef;
+  --color-text: #e8eaef;
+  --color-text-muted: #9ba3b0;
+  --color-border: #2a3441;
+  --color-surface: #111f36;
+  --color-white: #0a1628;
+  --color-accent: #8bc34a;
+  --color-accent-soft: rgba(139, 195, 74, 0.15);
+  --color-accent-glow: rgba(139, 195, 74, 0.25);
+  --shadow-soft: 0 18px 50px rgba(0, 0, 0, 0.5);
+}
+
 /* ——— Base & Resets ——— */
 *,
 *::before,
@@ -1357,6 +1371,48 @@ ul {
   background: var(--color-navy);
   border-color: var(--color-navy);
   color: var(--color-white);
+}
+
+/* Theme Toggle */
+.theme-toggle {
+  background: transparent;
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: var(--radius-pill);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+  margin-left: 1rem;
+}
+
+.theme-toggle:hover {
+  background: var(--color-surface);
+  border-color: var(--color-text-muted);
+}
+
+.theme-toggle svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+html[data-theme="dark"] .theme-toggle .icon-sun {
+  display: block;
+}
+
+html[data-theme="dark"] .theme-toggle .icon-moon {
+  display: none;
+}
+
+html:not([data-theme="dark"]) .theme-toggle .icon-sun {
+  display: none;
+}
+
+html:not([data-theme="dark"]) .theme-toggle .icon-moon {
+  display: block;
 }
 
 /* WhatsApp Floating Button */
