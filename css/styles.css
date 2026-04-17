@@ -1041,7 +1041,55 @@ ul {
 }
 
 .footer-links li {
-  margin-bottom: 0.45rem;
+  margin-bottom: 0.55rem;
+}
+
+.footer-links li a,
+.footer-links li .contact-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon-rounded {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.icon-rounded svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
+
+.icon-ln {
+  background-color: #0A66C2;
+}
+
+.icon-ig {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.icon-icon-fb {
+  background-color: #1877F2;
+}
+
+.icon-email {
+  background-color: #EA4335;
+}
+
+.icon-phone {
+  background-color: #25D366;
+}
+
+.icon-loc {
+  background-color: #D93025;
 }
 
 .footer-bottom {
