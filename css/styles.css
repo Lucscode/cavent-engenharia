@@ -397,7 +397,8 @@ ul {
 }
 
 .hero__lead {
-  color: rgba(255, 255, 255, 0.78);
+  color: var(--color-white);
+  opacity: 0.85;
   font-size: 1.05rem;
   max-width: 32ch;
   margin-bottom: 1.75rem;
