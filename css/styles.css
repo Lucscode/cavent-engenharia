@@ -858,6 +858,11 @@ html[data-theme="dark"] .card-compare--accent {
   aspect-ratio: 16/10;
 }
 
+/* Make the Cavent black logo an elegant gold so it stands out against dark backgrounds */
+.timeline__media img[src*="contact-side"] {
+  filter: invert(75%) sepia(35%) saturate(1200%) hue-rotate(348deg) brightness(98%) contrast(92%);
+}
+
 .timeline__row--flip .timeline__content:first-child {
   order: 1;
   text-align: right;
