@@ -1511,11 +1511,11 @@ html:not([data-theme="dark"]) .theme-toggle:hover {
   border-color: var(--color-navy);
 }
 
-/* Hover em modo escuro (botão para modo claro) */
+/* Hover em modo escuro (botão para modo claro - ícone sol) */
 html[data-theme="dark"] .theme-toggle:hover {
-  background: var(--color-accent);
-  color: var(--color-navy);
-  border-color: var(--color-accent);
+  background: var(--color-text);
+  color: var(--color-surface);
+  border-color: var(--color-text);
 }
 
 .theme-toggle svg {
