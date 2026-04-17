@@ -4,17 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Blog Cavent Engenharia — artigos sobre infraestrutura, BIM e sustentabilidade.">
-  <link rel="icon" href="assets/favicon.png" type="image/png" sizes="any">
-  <link rel="apple-touch-icon" href="assets/favicon.png">
-  <title>Blog | Cavent Engenharia</title>
+  <meta name="description" content="Coordenação BIM em instalações — Integração entre disciplinas para evitar retrabalho em obra.">
+  <link rel="icon" href="../assets/favicon.png" type="image/png" sizes="any">
+  <link rel="apple-touch-icon" href="../assets/favicon.png">
+  <title>Coordenação BIM em instalações | Cavent Engenharia</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Playfair+Display:wght@500;600&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/animations.css">
   <script>
     if (localStorage.getItem("theme") === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
       document.documentElement.setAttribute("data-theme", "dark");
@@ -25,8 +25,8 @@
 <body>
   <header class="site-header">
     <div class="container site-header__inner">
-      <a class="brand" href="index.html">
-        <img class="brand__mark" src="assets/contact-side.png" width="40" height="40" alt="" decoding="async">
+      <a class="brand" href="../index.html">
+        <img class="brand__mark" src="../assets/contact-side.png" width="40" height="40" alt="" decoding="async">
         <span class="brand__text">
           <span class="brand__name">CAVENT</span>
           <span class="brand__tag">ENGENHARIA</span>
@@ -36,14 +36,14 @@
         aria-label="Abrir menu"><span></span></button>
       <nav class="nav" id="site-nav" data-nav>
         <ul class="nav__links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="servicos.html">Serviços</a></li>
-          <li><a href="solucoes.html">Soluções</a></li>
-          <li><a href="contato.html">Contato</a></li>
-          <li><a href="blog.html" class="is-active">Blog</a></li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../sobre.html">Sobre</a></li>
+          <li><a href="../servicos.html">Serviços</a></li>
+          <li><a href="../solucoes.html">Soluções</a></li>
+          <li><a href="../contato.html">Contato</a></li>
+          <li><a href="../blog.html" class="is-active">Blog</a></li>
         </ul>
-        <a class="btn btn--dark" href="contato.html">
+        <a class="btn btn--dark" href="../contato.html">
           Fale conosco
           <span class="btn__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
         </a>
@@ -56,85 +56,57 @@
   </header>
 
   <main>
-    <header class="page-hero" data-reveal>
-      <div class="container">
-        <p class="section-label">Blog</p>
-        <h1 class="heading-serif heading-xl">Conteúdo para quem projeta o futuro das cidades</h1>
-        <p>Acompanhe nossos projetos, artigos sobre normas, BIM, sustentabilidade e gestão de obras.</p>
-        
-        <div class="blog-hub-controls">
-          <div class="blog-search">
-            <input type="search" id="searchInput" class="search-input" placeholder="Pesquisar artigos e projetos...">
-          </div>
-          <div class="blog-filters" id="blogFilters">
-            <button class="filter-btn is-active" data-filter="all">Todos</button>
-            <button class="filter-btn" data-filter="projetos">Projetos</button>
-            <button class="filter-btn" data-filter="infraestrutura">Infraestrutura</button>
-            <button class="filter-btn" data-filter="viario">Viário</button>
-            <button class="filter-btn" data-filter="instalacoes">Instalações</button>
+    <article class="blog-post">
+      <header class="page-hero" data-reveal>
+        <div class="container">
+          <p class="section-label">Instalações</p>
+          <h1 class="heading-serif heading-lg" style="margin-bottom: 0.5rem">Coordenação BIM em instalações</h1>
+          <div class="post-meta" style="color: var(--color-text-muted); font-size: 0.9rem;">
+            <span>Brasil</span> • <time datetime="2026-03-25">março 25, 2026</time>
           </div>
         </div>
-      </div>
-    </header>
+      </header>
 
-    <section class="section-white" aria-label="Lista de artigos">
-      <div class="container blog-grid" id="blogGrid">
-        <article class="blog-card" data-category="projetos">
-          <a href="blog/reforma-cindacta-iv.html" style="display: block;">
-            <img src="assets/sol-hfk.jpeg" width="640" height="200" alt="Reforma CINDACTA IV" style="height:200px;object-fit:cover;width:100%">
-            <div class="blog-card__body">
-              <p class="blog-card__meta">Projetos · Março 2026</p>
-              <h3>Reforma e Modernização do Sistema de Climatização e Energia</h3>
-              <p>Obras no CINDACTA IV em Manaus, com implantação de novos chillers e ampliação da infraestrutura.</p>
-            </div>
-          </a>
-        </article>
-        
-        <article class="blog-card" data-category="infraestrutura">
-          <a href="blog/drenagem-urbana-resiliencia.html" style="display: block;">
-            <img src="assets/serv-drenagem.png" width="640" height="200" alt="" style="height:200px;object-fit:cover;width:100%">
-            <div class="blog-card__body">
-              <p class="blog-card__meta">Infraestrutura · 2026</p>
-              <h3>Drenagem urbana e resiliência</h3>
-              <p>Boas práticas para reduzir riscos hidrológicos em empreendimentos.</p>
-            </div>
-          </a>
-        </article>
+      <section class="section-white">
+        <div class="container blog-post-layout">
+          
+          <div class="post-content">
+            <img src="../assets/serv-hidrossanitario.png" alt="Coordenação BIM" style="border-radius: var(--radius-md); margin-bottom: 2rem; width: 100%; aspect-ratio: 16/9; object-fit: cover;">
+            
+            <p>A coordenação de projetos em BIM (Building Information Modeling) revolucionou a forma como as instalações prediais e urbanas são projetadas e executadas. A grande vantagem reside na detecção antecipada de interferências ("clash detection"), evitando surpresas dispendiosas durante a obra.</p>
+            
+            <p>Neste artigo, mostramos como a Cavent integra as disciplinas de hidráulica, elétrica e HVAC em um único modelo digital colaborativo. Discutimos os níveis de detalhamento (LOD), a extração automática de quantitativos e como essa tecnologia garante uma execução mais limpa e fiel ao projeto original.</p>
+            
+            <p>Investir em coordenação BIM é investir na redução de desperdícios e no cumprimento rigoroso de cronogramas.</p>
+          </div>
 
-        <article class="blog-card" data-category="viario">
-          <a href="blog/seguranca-viaria-projeto.html" style="display: block;">
-            <img src="assets/serv-viario.png" width="640" height="200" alt="" style="height:200px;object-fit:cover;width:100%">
-            <div class="blog-card__body">
-              <p class="blog-card__meta">Viário · 2026</p>
-              <h3>Segurança viária no projeto</h3>
-              <p>Como a geometria e o pavimento impactam a experiência do usuário.</p>
+          <aside class="post-sidebar">
+            <div class="sidebar-widget widget-contact">
+              <h3 style="margin-top: 0">Entre em contato</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 1.5rem">Não hesite em nos contactar para mais informações sobre projetos ou serviços.</p>
+              <a href="../contato.html" class="btn btn--dark" style="width: 100%; justify-content: center">Fale conosco</a>
             </div>
-          </a>
-        </article>
 
-        <article class="blog-card" data-category="instalacoes">
-          <a href="blog/coordenacao-bim-instalacoes.html" style="display: block;">
-            <img src="assets/serv-hidrossanitario.png" width="640" height="200" alt="" style="height:200px;object-fit:cover;width:100%">
-            <div class="blog-card__body">
-              <p class="blog-card__meta">Instalações · 2026</p>
-              <h3>Coordenação BIM em instalações</h3>
-              <p>Integração entre disciplinas para evitar retrabalho em obra.</p>
+            <div class="sidebar-widget widget-related">
+              <h3 style="margin-top: 0">Outras Notícias</h3>
+              <ul class="widget-links">
+                <li><a href="reforma-cindacta-iv.html">Reforma CINDACTA IV</a></li>
+                <li><a href="drenagem-urbana-resiliencia.html">Drenagem urbana e resiliência</a></li>
+                <li><a href="seguranca-viaria-projeto.html">Segurança viária no projeto</a></li>
+              </ul>
             </div>
-          </a>
-        </article>
-      </div>
-      
-      <div id="noResults" style="display: none; text-align: center; padding: 2rem; color: var(--color-text-muted);">
-        <p>Nenhum artigo encontrado para sua pesquisa.</p>
-      </div>
-    </section>
+          </aside>
+
+        </div>
+      </section>
+    </article>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-col">
         <div class="brand" style="margin-bottom:0.75rem">
-          <img class="brand__mark" src="assets/contact-side.png" width="36" height="36" alt="" decoding="async">
+          <img class="brand__mark" src="../assets/contact-side.png" width="36" height="36" alt="" decoding="async">
           <span class="brand__text"><span class="brand__name">CAVENT ENGENHARIA</span></span>
         </div>
         <p style="color:var(--color-text-muted);font-size:0.9rem;margin:0">Projetos de infraestrutura urbana.</p>
@@ -142,10 +114,10 @@
       <div class="footer-col">
         <h4>Menu</h4>
         <ul class="footer-links">
-          <li><a href="servicos.html">Serviços</a></li>
-          <li><a href="index.html#projetos">Projetos</a></li>
-          <li><a href="sobre.html">Sobre nós</a></li>
-          <li><a href="index.html#historia">Nossa história</a></li>
+          <li><a href="../servicos.html">Serviços</a></li>
+          <li><a href="../index.html#projetos">Projetos</a></li>
+          <li><a href="../sobre.html">Sobre nós</a></li>
+          <li><a href="../index.html#historia">Nossa história</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -168,9 +140,9 @@
     <div class="container footer-bottom">© 2026 · Cavent Engenharia. Todos os direitos reservados. Brasil.</div>
   </footer>
   <a href="https://wa.me/5519995941508?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20Cavent%20Engenharia." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco pelo WhatsApp">
-    <img src="assets/logo-mark.webp" alt="WhatsApp">
+    <img src="../assets/logo-mark.webp" alt="WhatsApp">
   </a>
-  <script src="js/main.js" defer></script>
+  <script src="../js/main.js" defer></script>
 </body>
 
 </html>
