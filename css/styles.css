@@ -518,9 +518,16 @@ html[data-theme="dark"] .site-header .btn--dark .btn__icon {
 }
 
 html[data-theme="dark"] .client-logo {
-  background: rgba(255, 255, 255, 0.85);
-  padding: 0.5rem 1rem;
-  border-radius: 16px;
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  filter: brightness(0) invert(0.8); /* Silhueta cinza claro/branco */
+  opacity: 0.6;
+}
+
+html[data-theme="dark"] .client-logo:hover {
+  filter: brightness(0) invert(1); /* Fica branco puro no hover */
+  opacity: 1;
 }
 
 html[data-theme="dark"] .timeline__media img[src*="logo"],
