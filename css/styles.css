@@ -379,7 +379,8 @@ html[data-theme="dark"] .site-header .btn--dark .btn__icon {
   .nav {
     position: fixed;
     inset: var(--header-h) 0 auto 0;
-    background: var(--color-surface);
+    background: #0a1628;
+    color: #ffffff;
     border-bottom: 1px solid var(--color-border);
     padding: 1.25rem;
     flex-direction: column;
@@ -406,13 +407,23 @@ html[data-theme="dark"] .site-header .btn--dark .btn__icon {
     justify-content: center;
   }
 
+  .nav__links a {
+    color: rgba(255, 255, 255, 0.7) !important;
+  }
+
+  .nav__links a.is-active,
+  .nav__links a:hover {
+    color: #ffffff !important;
+  }
+
   .theme-toggle {
-    margin: 1rem 0 0;
+    margin: 1.5rem 0 0;
     width: 100%;
     height: 48px;
     justify-content: center;
     gap: 0.75rem;
-    border-color: var(--color-border);
+    border-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
   }
 
   html:not([data-theme="dark"]) .theme-toggle::after {
