@@ -526,10 +526,18 @@ html[data-theme="dark"] .site-footer .brand__mark {
   background: linear-gradient(160deg, #fafbfc 0%, #f0f2f5 100%);
 }
 
+html[data-theme="dark"] .card-compare--muted {
+  background: linear-gradient(160deg, var(--color-surface) 0%, var(--color-white) 100%);
+}
+
 .card-compare--accent {
   background: linear-gradient(145deg, #f5fbe9 0%, #ffffff 55%);
   border-color: rgba(127, 178, 56, 0.45);
   box-shadow: 0 0 0 1px rgba(127, 178, 56, 0.08), 0 20px 40px var(--color-accent-glow);
+}
+
+html[data-theme="dark"] .card-compare--accent {
+  background: linear-gradient(145deg, var(--color-accent-soft) 0%, var(--color-surface) 55%);
 }
 
 .card-compare h3 {
