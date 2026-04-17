@@ -1504,18 +1504,18 @@ html[data-theme="dark"] .contact-photo img {
   margin-left: 1rem;
 }
 
-/* Hover em modo claro (botão para modo escuro) */
+/* Hover em modo claro (botão para modo escuro - ícone lua) */
 html:not([data-theme="dark"]) .theme-toggle:hover {
-  background: var(--color-navy);
-  color: var(--color-white);
-  border-color: var(--color-navy);
+  background: #0a1628;
+  color: #ffffff;
+  border-color: #0a1628;
 }
 
 /* Hover em modo escuro (botão para modo claro - ícone sol) */
 html[data-theme="dark"] .theme-toggle:hover {
-  background: var(--color-text);
-  color: var(--color-surface);
-  border-color: var(--color-text);
+  background: #ffffff;
+  color: #0a1628;
+  border-color: #ffffff;
 }
 
 .theme-toggle svg {
