@@ -467,6 +467,18 @@ ul {
   transform: scale(1.05);
 }
 
+html[data-theme="dark"] .client-logo {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+html[data-theme="dark"] .brand__mark,
+html[data-theme="dark"] .whatsapp-float img,
+html[data-theme="dark"] .timeline__media img[src*="logo"] {
+  filter: brightness(0) invert(1);
+}
+
 @keyframes scroll-marquee {
   to {
     transform: translateX(calc(-50% - 2rem));
@@ -962,7 +974,7 @@ ul {
 .form-field input,
 .form-field textarea {
   border: 1px solid transparent;
-  background: #eceef2;
+  background: var(--color-border);
   border-radius: var(--radius-md);
   padding: 0.85rem 1rem;
   font: inherit;
