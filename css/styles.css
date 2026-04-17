@@ -1504,9 +1504,18 @@ html[data-theme="dark"] .contact-photo img {
   margin-left: 1rem;
 }
 
-.theme-toggle:hover {
-  background: var(--color-surface);
-  border-color: var(--color-text-muted);
+/* Hover em modo claro (botão para modo escuro) */
+html:not([data-theme="dark"]) .theme-toggle:hover {
+  background: var(--color-navy);
+  color: var(--color-white);
+  border-color: var(--color-navy);
+}
+
+/* Hover em modo escuro (botão para modo claro) */
+html[data-theme="dark"] .theme-toggle:hover {
+  background: var(--color-accent);
+  color: var(--color-navy);
+  border-color: var(--color-accent);
 }
 
 .theme-toggle svg {
