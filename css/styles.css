@@ -1088,11 +1088,21 @@ html[data-theme="dark"] .card-compare--accent {
   resize: vertical;
 }
 
+.contact-photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .contact-photo img {
-  border-radius: var(--radius-md);
-  width: 100%;
-  object-fit: cover;
-  min-height: 420px;
+  width: 50%;
+  max-width: 400px;
+  object-fit: contain;
+  transition: filter 0.3s ease;
+}
+
+html[data-theme="dark"] .contact-photo img {
+  filter: brightness(0) invert(1);
 }
 
 .form-status {
