@@ -371,10 +371,57 @@
     });
   }
 
+  /* Modal de Serviços Expandidos */
+  function initServiceModal() {
+    var modal = qs("#serviceModal");
+    var title = qs("#modalTitle");
+    var desc = qs("#modalDescription");
+    var img = qs("#modalImage");
+    var closeBtns = qsa("[data-modal-close]");
+    var cards = qsa("[data-service-expand]");
+
+    if (!modal || !title || !desc || !img) return;
+
+    function openModal(card) {
+      var sTitle = card.getAttribute("data-title");
+      var sDesc = card.getAttribute("data-description");
+      var sImg = card.querySelector("img").src;
+
+      title.textContent = sTitle;
+      desc.textContent = sDesc;
+      img.src = sImg;
+      img.alt = sTitle;
+
+      modal.classList.add("is-active");
+      document.body.style.overflow = "hidden"; // Trava o scroll
+    }
+
+    function closeModal() {
+      modal.classList.remove("is-active");
+      document.body.style.overflow = "";
+    }
+
+    cards.forEach(function (card) {
+      card.addEventListener("click", function () {
+        openModal(card);
+      });
+    });
+
+    closeBtns.forEach(function (btn) {
+      btn.addEventListener("click", closeModal);
+    });
+
+    // Fechar com tecla ESC
+    window.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") closeModal();
+    });
+  }
+
   initReveal();
   initHero();
   initHeroParallax();
   initHeaderScroll();
   initStats();
   initBlogFilters();
+  initServiceModal();
 })();
