@@ -425,6 +425,10 @@ ul {
   -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
 }
 
+.clients__marquee.is-visible {
+  padding: 16px;
+}
+
 .marquee-content {
   display: flex;
   align-items: center;
