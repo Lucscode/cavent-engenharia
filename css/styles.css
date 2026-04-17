@@ -858,9 +858,11 @@ html[data-theme="dark"] .card-compare--accent {
   aspect-ratio: 16/10;
 }
 
-/* Make the Cavent black logo an elegant gold gradient so it stands out against dark backgrounds */
-.timeline__media img[src*="contact-side"] {
-  content: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7');
+/* Golden gradient mask for robust cross-browser support */
+.golden-logo-mask {
+  width: 100%;
+  max-width: 360px;
+  height: 220px;
   background: linear-gradient(135deg, #BF953F 0%, #FCF6BA 30%, #B38728 55%, #FBF5B7 80%, #AA771C 100%);
   -webkit-mask-image: url('../assets/contact-side.png');
   mask-image: url('../assets/contact-side.png');
@@ -870,7 +872,6 @@ html[data-theme="dark"] .card-compare--accent {
   mask-repeat: no-repeat;
   -webkit-mask-position: center;
   mask-position: center;
-  filter: none;
 }
 
 .timeline__row--flip .timeline__content:first-child {
