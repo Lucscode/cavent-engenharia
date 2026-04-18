@@ -417,6 +417,39 @@
     });
   }
 
+  /* Recomendacoes Aleatorias no Blog */
+  function initRelatedPosts() {
+    var container = qs("#relatedPosts");
+    if (!container) return;
+
+    var allPosts = [
+      { url: "adequacao-hidrossanitaria-llinea.html", title: "Adequação de esgoto - Llinea", img: "../assets/proj-llinea.jpg" },
+      { url: "coordenacao-bim-instalacoes.html", title: "Coordenação BIM em instalações", img: "../assets/service-hidrossanitario.png" },
+      { url: "drenagem-urbana-resiliencia.html", title: "Drenagem urbana e resiliência", img: "../assets/service-drenagem.png" },
+      { url: "seguranca-viaria-projeto.html", title: "Segurança viária no projeto", img: "../assets/service-viario.png" }
+    ];
+
+    var currentUrl = window.location.pathname.split("/").pop();
+    var others = allPosts.filter(function (p) {
+      return p.url !== currentUrl;
+    });
+
+    // Shuffle
+    others.sort(function () { return 0.5 - Math.random(); });
+    var selected = others.slice(0, 3);
+
+    container.innerHTML = selected.map(function (p) {
+      return (
+        '<li class="related-post-item">' +
+          '<a href="' + p.url + '">' +
+            '<img src="' + p.img + '" alt="" class="related-thumb">' +
+            "<span>" + p.title + "</span>" +
+          "</a>" +
+        "</li>"
+      );
+    }).join("");
+  }
+
   initReveal();
   initHero();
   initHeroParallax();
@@ -424,4 +457,5 @@
   initStats();
   initBlogFilters();
   initServiceModal();
+  initRelatedPosts();
 })();

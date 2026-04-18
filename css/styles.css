@@ -1512,6 +1512,14 @@ html[data-theme="dark"] .contact-photo img {
   padding: 1.5rem;
 }
 
+.sidebar-widget h4 {
+  font-size: 1.1rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: var(--color-navy);
+  font-weight: 700;
+}
+
 .widget-contact {
   background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-navy-soft) 100%);
   color: var(--color-white);
@@ -1521,7 +1529,8 @@ html[data-theme="dark"] .contact-photo img {
   box-shadow: 0 10px 30px rgba(10, 22, 40, 0.15);
 }
 
-.widget-contact h3 {
+.widget-contact h3,
+.widget-contact h4 {
   color: var(--color-white) !important;
   margin-top: 0;
   margin-bottom: 0.75rem;
@@ -2073,6 +2082,45 @@ html[data-theme="dark"] .mvv-card:hover {
 }
 
 /* BotÃƒÆ’Ã‚Â£o Voltar no Blog */
+.widget-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.related-post-item {
+  margin-bottom: 1.25rem;
+}
+
+.related-post-item a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: var(--color-text);
+  transition: all 0.2s ease;
+}
+
+.related-post-item a:hover {
+  color: var(--color-primary);
+  transform: translateX(4px);
+}
+
+.related-thumb {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  object-fit: cover;
+  flex-shrink: 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.related-post-item span {
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
 .post-back-btn {
   display: inline-flex;
   align-items: center;
