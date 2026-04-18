@@ -1,3 +1,5 @@
+/* Desenvolvido por Lucas Pereira (https://www.linkedin.com/in/lucasadmpereira/) e Eduardo Serpa (https://www.linkedin.com/in/eduardo-serpa/) */
+
 /* Cavent Engenharia — design tokens e base */
 :root {
   --color-navy: #0a1628;
@@ -15,7 +17,7 @@
   --radius-sm: 16px;
   --radius-pill: 99px;
   --shadow-soft: 0 16px 48px rgba(10, 22, 40, 0.08);
-  --font-sans: "DM Sans", system-ui, sans-serif;
+  --font-sans: "Roboto", system-ui, sans-serif, system-ui, sans-serif;
   --font-serif: "Playfair Display", Georgia, serif;
   --color-primary: var(--color-navy);
   --color-primary-rgb: 10, 22, 40;
@@ -98,9 +100,9 @@ ul {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 0.8125rem;
+  font-size: 12px;
   font-weight: 600;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--color-navy);
 }
@@ -209,12 +211,12 @@ html[data-theme="dark"] .site-header .btn--dark .btn__icon {
 
 .brand__name {
   font-weight: 700;
-  font-size: 0.95rem;
+  font-size: 15px;
   letter-spacing: 0.04em;
 }
 
 .brand__tag {
-  font-size: 0.75rem;
+  font-size: 12px;
   letter-spacing: 0.18em;
   color: var(--color-text-muted);
   text-transform: uppercase;
@@ -233,7 +235,7 @@ html[data-theme="dark"] .site-header .btn--dark .btn__icon {
 }
 
 .nav__links a {
-  font-size: 0.9rem;
+  font-size: 14px;
   font-weight: 500;
   color: var(--color-text-muted);
   position: relative;
@@ -263,7 +265,7 @@ html[data-theme="dark"] .site-header .btn--dark .btn__icon {
   padding: 0.75rem 1rem 0.75rem 1.5rem;
   border-radius: var(--radius-pill);
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 1;
   white-space: nowrap;
   transition: transform 0.3s var(--ease-spring, ease), box-shadow 0.3s ease, background 0.25s ease;
@@ -428,13 +430,13 @@ html[data-theme="dark"] .site-header .btn--dark .btn__icon {
 
   html:not([data-theme="dark"]) .theme-toggle::after {
     content: "Mudar para Modo Escuro";
-    font-size: 0.9rem;
+    font-size: 14px;
     font-weight: 500;
   }
 
   html[data-theme="dark"] .theme-toggle::after {
     content: "Mudar para Modo Claro";
-    font-size: 0.9rem;
+    font-size: 14px;
     font-weight: 500;
   }
 }
@@ -464,13 +466,7 @@ html[data-theme="dark"] .site-header .btn--dark .btn__icon {
   margin: 0 0 1rem;
 }
 
-.hero__lead {
-  color: var(--color-white);
-  opacity: 0.85;
-  font-size: 1.05rem;
-  max-width: 32ch;
-  margin-bottom: 1.75rem;
-}
+.hero__lead { color: var(--color-white); opacity: 0.85; font-size: 18px; max-width: 32ch; margin-bottom: 2rem; }
 
 .hero__actions {
   display: flex;
@@ -622,8 +618,8 @@ html[data-theme="dark"] .card-compare--accent {
 }
 
 .card-compare h3 {
-  margin: 0 0 1.25rem;
-  font-size: 1.05rem;
+  font-size: 40px;
+  letter-spacing: -0.01em;
 }
 
 .compare-list li {
@@ -639,13 +635,13 @@ html[data-theme="dark"] .card-compare--accent {
 
 .compare-list strong {
   display: block;
-  font-size: 0.95rem;
+  font-size: 15px;
   margin-bottom: 0.2rem;
 }
 
 .compare-list p {
   margin: 0;
-  font-size: 0.875rem;
+  font-size: 14px;
   color: var(--color-text-muted);
 }
 
@@ -774,13 +770,13 @@ html[data-theme="dark"] .card-compare--accent {
 }
 
 .carousel-card__body h3 {
-  margin: 0 0 0.5rem;
-  font-size: 1.35rem;
+  font-size: 40px;
+  letter-spacing: -0.01em;
 }
 
 .carousel-card__body p {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 14px;
   line-height: 1.55;
   color: rgba(255, 255, 255, 0.88);
 }
@@ -885,7 +881,7 @@ html[data-theme="dark"] .card-compare--accent {
 }
 
 .stats-bar__label {
-  font-size: 0.9rem;
+  font-size: 14px;
   color: var(--color-text-muted);
 }
 
@@ -954,14 +950,14 @@ html[data-theme="dark"] .card-compare--accent {
 }
 
 .timeline__content h3 {
-  margin: 0 0 0.5rem;
-  font-size: 1.1rem;
+  font-size: 40px;
+  letter-spacing: -0.01em;
 }
 
 .timeline__content p {
   margin: 0;
   color: var(--color-text-muted);
-  font-size: 0.95rem;
+  font-size: 15px;
 }
 
 .timeline__media img {
@@ -1037,7 +1033,7 @@ html[data-theme="dark"] .card-compare--accent {
 
 .team-card__text h2 {
   margin: 0 0 0.35rem;
-  font-size: 1.5rem;
+  font-size: 24px;
 }
 
 .team-card__text .role {
@@ -1099,7 +1095,7 @@ html[data-theme="dark"] .card-compare--accent {
 }
 
 .form-field label {
-  font-size: 0.8rem;
+  font-size: 13px;
   font-weight: 600;
   color: var(--color-text-muted);
 }
@@ -1146,7 +1142,7 @@ html[data-theme="dark"] .contact-photo img {
 
 .form-status {
   margin-top: 1rem;
-  font-size: 0.9rem;
+  font-size: 14px;
   font-weight: 600;
 }
 
@@ -1197,14 +1193,13 @@ html[data-theme="dark"] .contact-photo img {
 }
 
 .footer-col h4 {
-  margin: 0 0 1rem;
-  font-size: 0.95rem;
+  font-size: 32px;
 }
 
 .footer-col a,
 .footer-col p {
   display: block;
-  font-size: 0.9rem;
+  font-size: 14px;
   color: var(--color-text-muted);
   margin-bottom: 0.5rem;
 }
@@ -1267,7 +1262,7 @@ html[data-theme="dark"] .contact-photo img {
 
 .footer-bottom {
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 13px;
   color: var(--color-text-muted);
   padding-top: 1.5rem;
   border-top: 1px solid var(--color-border);
@@ -1303,20 +1298,20 @@ html[data-theme="dark"] .contact-photo img {
 }
 
 .blog-card__meta {
-  font-size: 0.75rem;
+  font-size: 12px;
   color: var(--color-text-muted);
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
 
 .blog-card h3 {
-  margin: 0.5rem 0;
-  font-size: 1.1rem;
+  font-size: 40px;
+  letter-spacing: -0.01em;
 }
 
 .blog-card p {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 14px;
   color: var(--color-text-muted);
 }
 
@@ -1361,13 +1356,13 @@ html[data-theme="dark"] .contact-photo img {
 }
 
 .solution-card h3 {
-  margin: 0 0 0.5rem;
-  font-size: 1.05rem;
+  font-size: 40px;
+  letter-spacing: -0.01em;
 }
 
 .solution-card p {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 14px;
   color: var(--color-text-muted);
 }
 
@@ -1411,7 +1406,7 @@ html[data-theme="dark"] .contact-photo img {
 }
 
 .post-content {
-  font-size: 1.05rem;
+  font-size: 17px;
   line-height: 1.7;
   color: var(--color-text);
 }
@@ -1460,7 +1455,7 @@ html[data-theme="dark"] .contact-photo img {
 
 .widget-links a {
   color: var(--color-text-muted);
-  font-size: 0.95rem;
+  font-size: 15px;
   transition: color 0.2s;
   display: block;
 }
@@ -1489,7 +1484,7 @@ html[data-theme="dark"] .contact-photo img {
   border-radius: var(--radius-md);
   border: 1px solid var(--color-border);
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 16px;
   outline: none;
   transition: border-color 0.2s, box-shadow 0.2s;
 }
@@ -1512,7 +1507,7 @@ html[data-theme="dark"] .contact-photo img {
   border: 1px solid var(--color-border);
   background: var(--color-white);
   color: var(--color-text-muted);
-  font-size: 0.85rem;
+  font-size: 14px;
   font-weight: 500;
   transition: all 0.2s;
 }
@@ -1638,7 +1633,7 @@ html:not([data-theme="dark"]) .theme-toggle .icon-moon {
 
 .history-text {
   color: var(--color-text-muted);
-  font-size: 1.05rem;
+  font-size: 17px;
   line-height: 1.8;
 }
 
@@ -1720,16 +1715,14 @@ html:not([data-theme="dark"]) .theme-toggle .icon-moon {
 }
 
 .mvv-card h3 {
-  font-family: var(--font-serif);
-  font-size: 1.5rem;
-  color: var(--color-navy);
-  margin: 0;
+  font-size: 40px;
+  letter-spacing: -0.01em;
 }
 
 .mvv-card p {
   margin: 0;
   color: var(--color-text-muted);
-  font-size: 0.95rem;
+  font-size: 15px;
   line-height: 1.6;
 }
 
@@ -1737,7 +1730,7 @@ html:not([data-theme="dark"]) .theme-toggle .icon-moon {
   padding-left: 1.25rem;
   list-style: disc;
   color: var(--color-text-muted);
-  font-size: 0.95rem;
+  font-size: 15px;
 }
 
 .mvv-card ul li {
@@ -1870,11 +1863,18 @@ html[data-theme="dark"] .mvv-card:hover {
 }
 
 .service-modal__content .section-label {
-  margin-bottom: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-navy);
 }
 
 .service-modal__content h2 {
-  font-size: 2.5rem;
+  font-size: 40px;
   margin-bottom: 1.5rem;
   line-height: 1.1;
 }
@@ -1882,7 +1882,7 @@ html[data-theme="dark"] .mvv-card:hover {
 .service-modal__content p {
   color: var(--color-text-muted);
   line-height: 1.7;
-  font-size: 1.1rem;
+  font-size: 18px;
   margin-bottom: 1.5rem;
 }
 
@@ -1917,7 +1917,7 @@ html[data-theme="dark"] .mvv-card:hover {
   }
   
   .service-modal__content h2 {
-    font-size: 2rem;
+    font-size: 32px;
   }
 }
 
@@ -1934,7 +1934,7 @@ html[data-theme="dark"] .mvv-card:hover {
 /* Breadcrumbs */
 .breadcrumbs {
   padding: 1rem 0;
-  font-size: 0.85rem;
+  font-size: 14px;
   color: var(--color-text-muted);
 }
 
@@ -1990,3 +1990,5 @@ html[data-theme="dark"] .mvv-card:hover {
   color: white;
   transform: translateX(-5px);
 }
+
+.icon-x { width: 22px; height: 22px; border-radius: 50%; background: #d5d9e0; display: flex; align-items: center; justify-content: center; } .icon-x::after { content: ''; width: 12px; height: 12px; background-image: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22white%22 stroke-width=%223.5%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cline x1=%2218%22 y1=%226%22 x2=%226%22 y2=%2218%22%3E%3C/line%3E%3Cline x1=%226%22 y1=%226%22 x2=%2218%22 y2=%2218%22%3E%3C/line%3E%3C/svg%3E'); background-size: contain; background-repeat: no-repeat; }
