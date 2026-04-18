@@ -371,7 +371,7 @@
     });
   }
 
-  /* Modal de Serviços Expandidos */
+  /* Modal de serviços Expandidos */
   function initServiceModal() {
     var modal = qs("#serviceModal");
     var title = qs("#modalTitle");
