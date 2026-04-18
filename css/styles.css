@@ -115,20 +115,30 @@ ul {
   background: var(--color-navy);
 }
 
-.heading-serif {
+h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-serif);
   font-weight: 500;
   line-height: 1.15;
-  letter-spacing: -0.02em;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: var(--color-navy);
 }
 
-.heading-xl {
-  font-size: clamp(2rem, 4vw, 2.85rem);
+html[data-theme='dark'] h1,
+html[data-theme='dark'] h2,
+html[data-theme='dark'] h3,
+html[data-theme='dark'] h4,
+html[data-theme='dark'] h5,
+html[data-theme='dark'] h6 {
+  color: var(--color-text);
 }
 
-.heading-lg {
-  font-size: clamp(1.65rem, 3vw, 2.25rem);
-}
+h1, .heading-xl { font-size: 56px; letter-spacing: -0.02em; }
+h2, .heading-lg { font-size: 48px; letter-spacing: -0.015em; }
+h3 { font-size: 40px; letter-spacing: -0.01em; }
+h4 { font-size: 32px; }
+h5 { font-size: 24px; }
+h6 { font-size: 16px; }
 
 .text-center {
   text-align: center;
@@ -460,7 +470,7 @@ html[data-theme="dark"] .site-header .btn--dark .btn__icon {
 
 .hero__title {
   font-family: var(--font-serif);
-  font-size: clamp(2rem, 4.2vw, 3rem);
+  font-size: 48px;
   font-weight: 500;
   line-height: 1.12;
   margin: 0 0 1rem;
@@ -875,7 +885,7 @@ html[data-theme="dark"] .card-compare--accent {
 }
 
 .stats-bar__num {
-  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-size: 44px;
   font-weight: 700;
   letter-spacing: -0.03em;
 }
