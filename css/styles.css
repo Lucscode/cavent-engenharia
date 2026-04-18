@@ -133,8 +133,8 @@ html[data-theme='dark'] h6 {
   color: var(--color-text);
 }
 
-h1, .heading-xl { font-size: 56px; letter-spacing: -0.02em; }
-h2, .heading-lg { font-size: 48px; letter-spacing: -0.015em; }
+h1 { font-size: 56px; letter-spacing: -0.02em; }
+h2 { font-size: 48px; letter-spacing: -0.015em; }
 h3 { font-size: 40px; letter-spacing: -0.01em; }
 h4 { font-size: 32px; }
 h5 { font-size: 24px; }
