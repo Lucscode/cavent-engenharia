@@ -783,6 +783,7 @@ html[data-theme="dark"] .card-compare--accent {
 .carousel-card__body h3 {
   font-size: 40px;
   letter-spacing: -0.01em;
+  color: var(--color-white);
 }
 
 .carousel-card__body p {
