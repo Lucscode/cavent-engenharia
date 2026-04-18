@@ -1043,9 +1043,8 @@ html[data-theme="dark"] .card-compare--accent {
   direction: ltr;
 }
 
-.team-card__text h2 {
+.team-card__text h4 {
   margin: 0 0 0.35rem;
-  font-size: 24px;
 }
 
 .team-card__text .role {
