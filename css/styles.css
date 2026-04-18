@@ -961,9 +961,9 @@ html[data-theme="dark"] .card-compare--accent {
   padding: 0.5rem;
 }
 
-.timeline__content h3 {
-  font-size: 40px;
-  letter-spacing: -0.01em;
+.timeline__content h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
 }
 
 .timeline__content p {
