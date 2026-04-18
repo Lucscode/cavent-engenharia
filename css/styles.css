@@ -470,10 +470,11 @@ html[data-theme="dark"] .site-header .btn--dark .btn__icon {
 
 .hero__title {
   font-family: var(--font-serif);
-  font-size: 48px;
+  font-size: 56px;
   font-weight: 500;
   line-height: 1.12;
   margin: 0 0 1rem;
+  color: var(--color-white);
 }
 
 .hero__lead { color: var(--color-white); opacity: 0.85; font-size: 18px; max-width: 32ch; margin-bottom: 2rem; }
