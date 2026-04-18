@@ -770,7 +770,7 @@ html[data-theme="dark"] .card-compare--accent {
   inset: auto 0 0 0;
   padding: 2rem;
   background: linear-gradient(to top, rgba(10, 22, 40, 0.92), transparent);
-  color: var(--color-white);
+  color: #ffffff;
 }
 
 .carousel-card__body h3 {
