@@ -1,6 +1,6 @@
 /* Desenvolvido por Lucas Pereira (https://www.linkedin.com/in/lucasadmpereira/) e Eduardo Serpa (https://www.linkedin.com/in/eduardo-serpa/) */
 
-/* Cavent Engenharia — design tokens e base */
+/* Cavent Engenharia â€” design tokens e base */
 :root {
   --color-navy: #0a1628;
   --color-navy-soft: #111f36;
@@ -39,7 +39,7 @@
   --shadow-soft: 0 18px 50px rgba(0, 0, 0, 0.5);
 }
 
-/* ——— Base & Resets ——— */
+/* â€”â€”â€” Base & Resets â€”â€”â€” */
 *,
 *::before,
 *::after {
@@ -50,7 +50,7 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: calc(var(--header-h) + 1rem);
   overflow-y: scroll;
-  /* Previne pulo/mudança de tamanho do header entre páginas curtas e longas */
+  /* Previne pulo/mudanÃ§a de tamanho do header entre pÃ¡ginas curtas e longas */
 }
 
 body {
@@ -173,7 +173,7 @@ h6 { font-size: 16px; }
 }
 
 html[data-theme="dark"] .site-header {
-  background: #4b5563; /* Cinza médio */
+  background: #4b5563; /* Cinza mÃ©dio */
   border-bottom-color: rgba(255, 255, 255, 0.1);
   --color-text: #ffffff;
   --color-text-muted: #d1d5db;
@@ -1386,6 +1386,8 @@ html[data-theme="dark"] .contact-photo img {
 }
 
 .solution-card {
+  display: flex;
+  flex-direction: column;
   border-radius: var(--radius-md);
   overflow: hidden;
   border: 1px solid var(--color-border);
@@ -1399,6 +1401,9 @@ html[data-theme="dark"] .contact-photo img {
 }
 
 .solution-card__body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   padding: 1.5rem;
 }
 
@@ -1585,14 +1590,14 @@ html[data-theme="dark"] .contact-photo img {
   margin-left: 1rem;
 }
 
-/* Hover em modo claro (botão para modo escuro - ícone lua) */
+/* Hover em modo claro (botÃ£o para modo escuro - Ã­cone lua) */
 html:not([data-theme="dark"]) .theme-toggle:hover {
   background: #0a1628;
   color: #ffffff;
   border-color: #0a1628;
 }
 
-/* Hover em modo escuro (botão para modo claro - ícone sol) */
+/* Hover em modo escuro (botÃ£o para modo claro - Ã­cone sol) */
 html[data-theme="dark"] .theme-toggle:hover {
   background: #ffffff;
   color: #0a1628;
@@ -1820,7 +1825,7 @@ html[data-theme="dark"] .mvv-card:hover {
   justify-content: center;
 }
 
-/* Modal de Serviços */
+/* Modal de ServiÃ§os */
 .service-modal {
   position: fixed;
   top: 0;
@@ -1968,8 +1973,10 @@ html[data-theme="dark"] .mvv-card:hover {
   }
 }
 
-/* Cursor pointer para cards clicáveis */
+/* Cursor pointer para cards clicÃ¡veis */
 .solution-card {
+  display: flex;
+  flex-direction: column;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -2016,7 +2023,7 @@ html[data-theme="dark"] .mvv-card:hover {
   font-weight: 500;
 }
 
-/* Botão Voltar no Blog */
+/* BotÃ£o Voltar no Blog */
 .post-back-btn {
   display: inline-flex;
   align-items: center;
@@ -2039,3 +2046,10 @@ html[data-theme="dark"] .mvv-card:hover {
 }
 
 .icon-x { width: 22px; height: 22px; border-radius: 50%; background: #d5d9e0; display: flex; align-items: center; justify-content: center; } .icon-x::after { content: ''; width: 12px; height: 12px; background-image: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22white%22 stroke-width=%223.5%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cline x1=%2218%22 y1=%226%22 x2=%226%22 y2=%2218%22%3E%3C/line%3E%3Cline x1=%226%22 y1=%226%22 x2=%2218%22 y2=%2218%22%3E%3C/line%3E%3C/svg%3E'); background-size: contain; background-repeat: no-repeat; }
+
+
+/* Bottom alignment for card buttons */
+.solution-card__body .btn-text {
+  margin-top: auto;
+  padding-top: 1.5rem;
+}
