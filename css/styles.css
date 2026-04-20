@@ -509,6 +509,20 @@ html[data-theme="dark"] .site-header .btn--dark .btn__icon {
 
 .hero__lead { color: var(--color-white); opacity: 0.85; font-size: 18px; max-width: 32ch; margin-bottom: 2rem; }
 
+/* Correção: no dark mode --color-white vira azul escuro, tornando o texto invisível */
+html[data-theme='dark'] .hero__title {
+  color: #1a1a1a !important;
+}
+
+html[data-theme='dark'] .hero__lead {
+  color: #1a1a1a !important;
+  opacity: 1;
+}
+
+html[data-theme='dark'] .btn--ghost {
+  color: #1a1a1a !important;
+}
+
 .hero__actions {
   display: flex;
   flex-wrap: wrap;
@@ -2160,4 +2174,54 @@ html[data-theme="dark"] .mvv-card:hover {
 .solution-card__body .btn-text {
   margin-top: auto;
   padding-top: 1.5rem;
+}
+
+/* ── Blog Sidebar Widget ── */
+.blog-post-layout {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 3rem;
+  align-items: start;
+}
+
+.sidebar-widget {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.sidebar-widget h4 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 20px;
+  color: #0a1628 !important;
+}
+
+.sidebar-widget p {
+  color: var(--color-text);
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+/* Widget de contato — fix dark mode */
+html[data-theme='dark'] .widget-contact {
+  background: var(--color-surface);
+  border-color: var(--color-border);
+}
+
+html[data-theme='dark'] .widget-contact h4 {
+  color: #e8eaef !important;
+}
+
+html[data-theme='dark'] .widget-contact p {
+  color: var(--color-text) !important;
+}
+
+@media (max-width: 900px) {
+  .blog-post-layout {
+    grid-template-columns: 1fr;
+  }
 }
