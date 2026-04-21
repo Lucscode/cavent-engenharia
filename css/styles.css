@@ -180,15 +180,6 @@ html[data-theme="dark"] .site-header {
   --color-border: rgba(255, 255, 255, 0.1);
 }
 
-html[data-theme="dark"] .site-header .btn--dark {
-  background: #ffffff;
-  color: #000000;
-}
-
-html[data-theme="dark"] .site-header .btn--dark .btn__icon {
-  background: rgba(0, 0, 0, 0.08);
-}
-
 .site-header__inner {
   height: 100%;
   display: flex;
@@ -289,8 +280,8 @@ html[data-theme="dark"] .site-header .btn--dark .btn__icon {
 }
 
 .btn--dark {
-  background: var(--color-navy);
-  color: var(--color-white);
+  background: #0a1628;
+  color: #ffffff;
 }
 
 .btn--dark:hover {
@@ -299,12 +290,14 @@ html[data-theme="dark"] .site-header .btn--dark .btn__icon {
 }
 
 .btn--light {
-  background: var(--color-white);
-  color: var(--color-navy);
+  background: #ffffff;
+  color: #0a1628;
+  border: 1px solid #e8eaef;
 }
 
 .btn--light:hover {
   transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
 .btn__icon {
@@ -362,8 +355,8 @@ html[data-theme="dark"] .site-header .btn--dark .btn__icon {
 }
 
 .btn--light .btn__icon {
-  background: var(--color-navy);
-  color: var(--color-white);
+  background: #0a1628;
+  color: #ffffff;
 }
 
 .btn--ghost {
@@ -373,6 +366,27 @@ html[data-theme="dark"] .site-header .btn--dark .btn__icon {
 
 .btn--ghost:hover {
   opacity: 0.85;
+}
+
+.btn--outline {
+  background: transparent;
+  color: #0a1628;
+  border: 1.5px solid #0a1628;
+}
+
+.btn--outline:hover {
+  background: #0a1628;
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(10, 22, 40, 0.18);
+}
+
+.btn--outline .btn__icon {
+  background: rgba(10, 22, 40, 0.08);
+}
+
+.btn--outline:hover .btn__icon {
+  background: rgba(255, 255, 255, 0.15);
 }
 
 .nav-toggle {
@@ -521,6 +535,53 @@ html[data-theme='dark'] .hero__lead {
 
 html[data-theme='dark'] .btn--ghost {
   color: #1a1a1a !important;
+}
+
+html[data-theme='dark'] .btn--dark {
+  background: #ffffff;
+  color: #0a1628;
+}
+
+html[data-theme='dark'] .btn--dark:hover {
+  box-shadow: 0 12px 28px rgba(255, 255, 255, 0.12);
+}
+
+html[data-theme='dark'] .btn--dark .btn__icon {
+  background: rgba(10, 22, 40, 0.08);
+}
+
+html[data-theme='dark'] .btn--light {
+  background: #111f36;
+  color: #e8eaef;
+  border-color: #2a3441;
+}
+
+html[data-theme='dark'] .btn--light:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+html[data-theme='dark'] .btn--light .btn__icon {
+  background: rgba(255, 255, 255, 0.12);
+  color: #e8eaef;
+}
+
+html[data-theme='dark'] .btn--outline {
+  color: #e8eaef;
+  border-color: #e8eaef;
+}
+
+html[data-theme='dark'] .btn--outline:hover {
+  background: #e8eaef;
+  color: #0a1628;
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.1);
+}
+
+html[data-theme='dark'] .btn--outline .btn__icon {
+  background: rgba(232, 234, 239, 0.1);
+}
+
+html[data-theme='dark'] .btn--outline:hover .btn__icon {
+  background: rgba(10, 22, 40, 0.08);
 }
 
 .hero__actions {
@@ -2175,26 +2236,46 @@ html[data-theme="dark"] .mvv-card:hover {
 .post-back-btn {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.75rem;
   margin-top: 3rem;
-  padding: 0.75rem 1.25rem;
-  background: rgba(var(--color-primary-rgb), 0.05);
-  color: var(--color-primary);
-  border-radius: 12px;
+  padding: 0.75rem 1.5rem 0.75rem 1.25rem;
+  background: transparent;
+  color: #0a1628;
+  border: 1.5px solid #0a1628;
+  border-radius: var(--radius-pill);
   font-weight: 600;
+  font-size: 16px;
+  line-height: 1;
+  white-space: nowrap;
   text-decoration: none;
-  transition: all 0.3s ease;
-  border: 1px solid rgba(var(--color-primary-rgb), 0.1);
+  transition: transform 0.3s var(--ease-spring, ease), box-shadow 0.3s ease, background 0.25s ease, color 0.25s ease;
 }
 
 .post-back-btn:hover {
-  background: rgba(var(--color-primary-rgb), 0.1);
-  color: var(--color-primary);
-  transform: none;
+  background: #0a1628;
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(10, 22, 40, 0.18);
 }
 
 .post-back-btn:hover svg {
+  stroke: #ffffff;
   animation: back-roll 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+html[data-theme='dark'] .post-back-btn {
+  color: #e8eaef;
+  border-color: #e8eaef;
+}
+
+html[data-theme='dark'] .post-back-btn:hover {
+  background: #e8eaef;
+  color: #0a1628;
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.1);
+}
+
+html[data-theme='dark'] .post-back-btn:hover svg {
+  stroke: #0a1628;
 }
 
 @keyframes back-roll {
