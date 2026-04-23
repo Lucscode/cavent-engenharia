@@ -1,19 +1,14 @@
-/* Animações alinhadas ao feel do Framer (Motion): spring-like ease, reveal on scroll, hero stagger */
-
-:root {
+﻿:root {
   --ease-spring: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-smooth: cubic-bezier(0.22, 1, 0.36, 1);
   --dur-reveal: 0.75s;
   --dur-hero: 0.9s;
 }
-
-/* ——— Scroll reveal (viewport) ——— */
 [data-reveal] {
   opacity: 0;
   transform: translate3d(0, 32px, 0);
   will-change: opacity, transform;
 }
-
 [data-reveal].is-visible {
   opacity: 1;
   transform: translate3d(0, 0, 0);
@@ -22,8 +17,6 @@
     transform var(--dur-reveal) var(--ease-spring);
   transition-delay: var(--reveal-delay, 0s);
 }
-
-/* ——— Hero (load + máscara nos títulos, como no Framer) ——— */
 .hero__card {
   opacity: 0;
   transform: translate3d(0, 20px, 0) scale(0.985);
@@ -31,41 +24,34 @@
     opacity 0.85s var(--ease-spring),
     transform 0.85s var(--ease-spring);
 }
-
 .hero.hero--ready .hero__card {
   opacity: 1;
   transform: translate3d(0, 0, 0) scale(1);
 }
-
 .hero__title {
   display: flex;
   flex-direction: column;
   gap: 0.06em;
   margin: 0 0 1rem;
 }
-
 .hero__title-line {
   display: block;
   overflow: hidden;
   padding-bottom: 0.04em;
 }
-
 .hero__title-inner {
   display: block;
   transform: translate3d(0, 115%, 0);
   transition: transform var(--dur-hero) var(--ease-spring);
 }
-
 .hero.hero--ready .hero__title-line:nth-child(1) .hero__title-inner {
   transform: translate3d(0, 0, 0);
   transition-delay: 0.12s;
 }
-
 .hero.hero--ready .hero__title-line:nth-child(2) .hero__title-inner {
   transform: translate3d(0, 0, 0);
   transition-delay: 0.24s;
 }
-
 .hero__lead {
   opacity: 0;
   transform: translate3d(0, 16px, 0);
@@ -73,13 +59,11 @@
     opacity 0.65s var(--ease-spring),
     transform 0.65s var(--ease-spring);
 }
-
 .hero.hero--ready .hero__lead {
   opacity: 1;
   transform: translate3d(0, 0, 0);
   transition-delay: 0.38s;
 }
-
 .hero__actions {
   opacity: 0;
   transform: translate3d(0, 16px, 0);
@@ -87,13 +71,11 @@
     opacity 0.65s var(--ease-spring),
     transform 0.65s var(--ease-spring);
 }
-
 .hero.hero--ready .hero__actions {
   opacity: 1;
   transform: translate3d(0, 0, 0);
   transition-delay: 0.48s;
 }
-
 .hero__media {
   opacity: 0;
   transform: translate3d(0, 24px, 0) scale(1.03);
@@ -101,75 +83,59 @@
     opacity 0.85s var(--ease-spring),
     transform 0.85s var(--ease-spring);
 }
-
 .hero.hero--ready .hero__media {
   opacity: 1;
   transform: translate3d(0, 0, 0) scale(1);
   transition-delay: 0.2s;
 }
-
 .hero__media img {
   transform: scale(1.06);
   transition: transform 1s var(--ease-smooth);
 }
-
 .hero.hero--ready .hero__media img {
   transform: scale(1);
 }
-
-/* ——— Header ao rolar ——— */
 .site-header {
   transition:
     box-shadow 0.35s var(--ease-smooth),
     background 0.35s var(--ease-smooth);
 }
-
 .site-header.is-scrolled {
   box-shadow: 0 10px 40px rgba(10, 22, 40, 0.06);
   background: rgba(255, 255, 255, 0.97);
 }
-
-/* ——— Carrossel (transição “spring” suave) ——— */
 .carousel__track {
   transition: transform 0.72s var(--ease-smooth);
   will-change: transform;
 }
-
 .carousel__btn {
   transition:
     transform 0.25s var(--ease-spring),
     box-shadow 0.25s ease,
     background 0.25s ease;
 }
-
 .carousel__btn:active {
   transform: translateY(-50%) scale(0.94);
 }
-
-/* ——— Cards e botões (microinterações) ——— */
 .card-compare {
   transition:
     transform 0.35s var(--ease-spring),
     box-shadow 0.35s ease;
 }
-
 .card-compare:hover {
   transform: translateY(-4px);
   box-shadow: 0 20px 50px rgba(10, 22, 40, 0.07);
 }
-
 .client-pill {
   transition:
     transform 0.35s var(--ease-spring),
     opacity 0.35s ease,
     border-color 0.25s ease;
 }
-
 .client-pill:hover {
   transform: translateY(-2px);
   border-color: rgba(10, 22, 40, 0.18);
 }
-
 .btn {
   transition:
     transform 0.3s var(--ease-spring),
@@ -177,16 +143,13 @@
     background 0.25s ease,
     opacity 0.25s ease;
 }
-
 .btn:active {
   transform: scale(0.98);
 }
-
 .timeline__row[data-reveal]:not(.is-visible) .timeline__marker {
   transform: scale(0.65);
   opacity: 0;
 }
-
 .timeline__row[data-reveal].is-visible .timeline__marker {
   transform: scale(1);
   opacity: 1;
@@ -195,7 +158,6 @@
     opacity 0.45s ease;
   transition-delay: 0.1s;
 }
-
 .team-card,
 .blog-card,
 .solution-card {
@@ -203,22 +165,18 @@
     transform 0.4s var(--ease-spring),
     box-shadow 0.4s ease;
 }
-
 .team-card:hover,
 .blog-card:hover,
 .solution-card:hover {
   transform: translateY(-3px);
 }
-
 .blog-card:hover,
 .solution-card:hover {
   box-shadow: 0 18px 48px rgba(10, 22, 40, 0.08);
 }
-
 .stats-bar__num {
   font-variant-numeric: tabular-nums;
 }
-
 @media (prefers-reduced-motion: reduce) {
   [data-reveal],
   .hero__card,
@@ -230,30 +188,25 @@
     transform: none !important;
     transition: none !important;
   }
-
   .hero.hero--ready .hero__media img,
   .hero__media img {
     transform: none !important;
     transition: none !important;
   }
-
   .carousel__track {
     transition-duration: 0.01ms !important;
   }
-
   .timeline__marker {
     transform: none !important;
     opacity: 1 !important;
     transition: none !important;
   }
-
   .timeline__row[data-reveal]:not(.is-visible) .timeline__marker,
   .timeline__row[data-reveal] .timeline__marker {
     transform: none !important;
     opacity: 1 !important;
     transition: none !important;
   }
-
   .card-compare:hover,
   .client-pill:hover,
   .team-card:hover,
@@ -262,3 +215,4 @@
     transform: none;
   }
 }
+
