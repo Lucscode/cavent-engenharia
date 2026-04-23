@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /.git/
+Disallow: /.github/
+Disallow: /.vscode/
 
 Sitemap: https://caventengenharia.com.br/sitemap.xml
-
-Disallow: /.git/
