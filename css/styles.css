@@ -955,14 +955,14 @@ html[data-theme="dark"] .card-compare--accent {
     order: 1;
   }
   .timeline__content {
-    order: 2;
+    order: 3;
   }
   .timeline__media {
-    order: 3;
+    order: 2;
   }
   .timeline__row--flip .timeline__content:first-child {
     text-align: left;
-    order: 2;
+    order: 3;
   }
 }
 .team-slab {
