@@ -1127,6 +1127,19 @@ html[data-theme="dark"] .contact-photo img {
   gap: 2rem;
   margin-bottom: 2.5rem;
 }
+.footer-col:first-child {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-col:first-child .brand {
+  justify-content: center;
+}
+.footer-col:first-child .brand__mark {
+  width: 80px;
+  height: 80px;
+}
 .footer-col a,
 .footer-col p {
   display: block;
@@ -1267,23 +1280,9 @@ html[data-theme="dark"] .contact-photo img {
   .footer-grid {
     grid-template-columns: 1fr;
   }
-  .footer-col:first-child {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .footer-col:first-child .brand {
-    justify-content: center;
-  }
-  .footer-col:first-child .brand__mark {
-    width: 80px;
-    height: 80px;
-  }
   .footer-col h4 {
     font-size: 18px;
     margin-bottom: 0.5rem;
-  }
   }
 }
 .grid-cards {
