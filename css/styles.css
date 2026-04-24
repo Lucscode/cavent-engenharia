@@ -771,6 +771,11 @@ html[data-theme="dark"] .card-compare--accent {
   font-size: 14px;
   line-height: 1.55;
   color: rgba(255, 255, 255, 0.88);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .carousel__btn {
   position: absolute;
